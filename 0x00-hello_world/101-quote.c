@@ -2,6 +2,7 @@
 #include <unistd.h>
 /**
  * maain - Entry point
+ * description: prints a string of characters
  * Return:1
  */
 int main(void)
