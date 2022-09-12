@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - to determine if a number is positive or negative.
+ * main -  determine if number is +ve or -ve.
  *
- * description: this program will assignn a redom number to the variable n each time it is executed.
+ * description: program will assign  random num to the var n each time it is executed.
  *
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if(n > 0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
