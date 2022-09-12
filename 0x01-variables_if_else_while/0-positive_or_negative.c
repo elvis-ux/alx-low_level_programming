@@ -4,10 +4,9 @@
 /**
  * main -  determine if number is +ve or -ve.
  *
- * description: program will assign  random num to the var n each time it is executed.
- *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
