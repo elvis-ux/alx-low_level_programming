@@ -12,9 +12,9 @@ int main(void)
 	{
 		for (num2 = num1 + 1; num2 <= '9'; num2++)
 		{
-			for (mun3 = num2 + 1; num3 <= ' 9'; num3++, num++)
+			for (num3 = num2 + 1; num3 <= '9'; num3++, num++)
 			{
-				if (n > 0)
+				if (num > 0)
 					{
 						putchar(',');
 						putchar(' ');
@@ -27,3 +27,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+}
