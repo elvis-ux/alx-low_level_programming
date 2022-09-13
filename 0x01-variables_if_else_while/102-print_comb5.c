@@ -6,21 +6,21 @@
  */
 int main(void)
 {
-	int num1, num2, num3, num4 = 0;
+	int n1, n2, n3, n4 =0;
 
-	for (num1 = '0'; num1 <= '9'; num1++)
+	for (n1 = '0'; n1 <= '9'; n1++)
 	{
-		for (num2 = '0'; num2 <= '9'; num2++)
+		for (n2 = '0'; n2 <= '9'; n2++)
 		{
-			for (num3 = '0'; num3 <= '9'; num3++)
+			for (n3 = '0'; n3 <= '9'; n3++)
 			{
-				for (num4 = num2 + 1; num4 <= '9'; num4++)
+				for (n4 = n2 +1; n4 <= '9'; n4++)
 				{
-					putchar(num1);
-					putchar(num2);
+					putchar(n1);
+					putchar(n2);
 					putchar(' ');
-					putchar(num3);
-					putchar(num4);
+					putchar(n3);
+					putchar(n4);
 					putchar(',');
 					putchar(' ');
 				}
@@ -28,4 +28,3 @@ int main(void)
 		}
 	} putchar('\n');
 	return (0);
-}
