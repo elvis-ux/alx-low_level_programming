@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int numz;
+	int num;
 	
 	for (numz = '0'; numz <= '9'; numz++)
 		putchar(numz);
