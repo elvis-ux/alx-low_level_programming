@@ -10,6 +10,4 @@ int main(void)
 	
 	for (numz = '0'; numz <= '9'; numz++)
 		putchar(numz);
-	putchar('\n');
-	return (0);
-}
+	put
