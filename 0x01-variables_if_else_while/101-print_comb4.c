@@ -15,16 +15,16 @@ int main(void)
 			for (num3 = num2 + 1; num3 <= '9'; num3++, num++)
 			{
 				if (num > 0)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
 				putchar(num1);
 				putchar(num2);
 				putchar(num3);
 			}
 		}
-	}
-	putchar('\n');
+	} putchar('\n');
 	return (0);
 }
