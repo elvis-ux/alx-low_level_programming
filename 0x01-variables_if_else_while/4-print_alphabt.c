@@ -10,7 +10,7 @@ int main(void)
 
 	for (set = 'a'; set <= 'z'; set++)
 	{
-		if ( set == 'e' && set == 'q')
+		if ( set == 'e'|| set == 'q')
 			continue;
 		else
 			putchar(set);
