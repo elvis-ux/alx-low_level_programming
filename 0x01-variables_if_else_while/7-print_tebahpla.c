@@ -10,6 +10,6 @@ int main(void)
 
 	for (set2 = 'z'; set2 <= 'a'; set2++)
 		putchar(set2);
-	putchar('\n')
-		return (0);
+	putchar('\n');
+	return (0);
 }
