@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n1, n2, n3, n4 =0;
+	int n1, n2, n3, n4 = 0;
 
 	for (n1 = '0'; n1 <= '9'; n1++)
 	{
@@ -14,7 +14,7 @@ int main(void)
 		{
 			for (n3 = '0'; n3 <= '9'; n3++)
 			{
-				for (n4 = n2 +1; n4 <= '9'; n4++)
+				for (n4 = n2 + 1; n4 <= '9'; n4++)
 				{
 					putchar(n1);
 					putchar(n2);
