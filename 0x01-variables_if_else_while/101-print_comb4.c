@@ -14,7 +14,7 @@ int main(void)
 		{
 			for (num3 = num2 + 1; num3 <= '9'; num3++, num++)
 			{
-				if (num > )
+				if (num > 0)
 					{
 						putchar(',');
 						putchar(' ');
