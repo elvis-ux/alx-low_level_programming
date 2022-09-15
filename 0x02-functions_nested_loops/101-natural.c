@@ -13,16 +13,16 @@ int main(void)
 	sum5 = 0;
 	sum = 0;
 
-	for (i = 0; i < 1024; ++i)
+	for (j = 0; j < 1024; ++j)
 	{
-		if ((i % 3) == 0)
+		if ((j % 3) == 0)
 		{
 
-			sum3 = sum3 + i;
+			sum3 = sum3 + j;
 		}
-		else if ((i % 5) == 0)
+		else if ((j % 5) == 0)
 		{
-			sum5 = sum5 + i;
+			sum5 = sum5 + j;
 		}
 	}
 	sum = sum3 + sum5;
