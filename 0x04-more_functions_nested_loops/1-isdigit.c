@@ -7,6 +7,7 @@ include "main.h"
  *
  * Return: 1 if number is a digit and 0 otherwise
  */
+
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
