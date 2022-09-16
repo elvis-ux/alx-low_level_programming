@@ -5,9 +5,8 @@ include "main.h"
  *
  * @c: the number to be checked
  *
- * Return: 1 if c is a digit and 0 otherwise
+ * Return: 1 if number is a digit and 0 otherwise
  */
-
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
