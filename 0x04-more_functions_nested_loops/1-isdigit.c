@@ -5,7 +5,7 @@ include "main.h"
  *
  * @c: number to be checked
  *
- * Return: 1 if the number is digit, 0 otherwisw
+ * Return: 1 if the number is digit, 0 otherwise
  *
  */
 
