@@ -1,11 +1,12 @@
 include "main.h"
 
 /**
- * _isdigit - checks for a digit (0-9)
+ * _isdigit - checks for a digit 0-9
  *
- * @c: The number to be checked
+ * @c: number to be checked
  *
- * Return: 1 if number is a digit and 0 otherwise
+ * Return: 1 if the number is digit, 0 otherwisw
+ *
  */
 
 int _isdigit(int c)
