@@ -12,7 +12,7 @@
  */
 int _atoi(char *str)
 {
-	int sign 1, base = 0, i = 0;
+	int sign = 1, base = 0, i = 0;
 
 	for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
 	{
