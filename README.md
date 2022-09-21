@@ -1,1 +1,3 @@
-more_functions_and_nested_loops
+More pointers
+Arrays and
+Strings
