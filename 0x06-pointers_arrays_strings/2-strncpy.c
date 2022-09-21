@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * _strncat - copies a string
+ * _strncpy - copies a string
+ *
  * @dest: Destination string
- * @src: strings concatinated
+ *
+ * @src: strings to be concatenated
+ *
  * @n: no of bytes to be copied
  *
  * Return: dest
