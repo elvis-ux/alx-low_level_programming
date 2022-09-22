@@ -7,7 +7,7 @@
  *
  * Return: Uppercase string
  */
-char string_toupper(char *n)
+char *string_toupper(char *n)
 {
 	int j;
 
