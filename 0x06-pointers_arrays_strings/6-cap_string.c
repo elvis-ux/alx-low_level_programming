@@ -21,7 +21,7 @@ char *cap_string(char *s)
 			if (*(s + j) == cap_string[i])
 			{
 				if ((*(s + (j + 1)) >= 97) && (*(s + (j + 1)) <= 122))
-					*(s + (n + 1)) = *(s + (j + 1)) - 2;
+					*(s + (n + 1)) = *(s + (j + 1)) - 32;
 						break;
 						}
 						}
