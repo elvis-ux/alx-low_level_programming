@@ -9,7 +9,7 @@ char *cap_string(char *s)
 {
 	int j = 0;
 	int i;
-	int cap_string[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int cap_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (*(s + j) >= 97 && *(s + j) <= 122)
 		*(s + j) = *(s + j) - 32;
@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	{
 		for (i = 0; i < 13; i++)
 		{
-			if (*(s + j) == cap_string[i])
+			if (*(s + j) == cap_words[i])
 			{
 				if ((*(s + (j + 1)) >= 97) && (*(s + (j + 1)) <= 122))
 					*(s + (n + 1)) = *(s + (j + 1)) - 32;
