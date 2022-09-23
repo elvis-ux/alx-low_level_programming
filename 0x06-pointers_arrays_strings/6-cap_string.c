@@ -23,7 +23,7 @@ char *cap_string(char *s)
 			if (*(s + j) == cap_words[i])
 			{
 				if ((*(s + (j + 1)) >= 97) && (*(s + (j + 1)) <= 122))
-					*(s + (n + 1)) = *(s + (j + 1)) - 32;
+					*(s + (j + 1)) = *(s + (j + 1)) - 32;
 						break;
 						}
 						}
