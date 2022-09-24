@@ -33,7 +33,7 @@ void print_buffer(char *b, int size)
 			{
 				if (o >= size)
 					break;
-				if (*(b + 0) < 32 || *(b + o) > 126)
+				if (*(b + o) < 32 || *(b + o) > 126)
 					printf("%c", '.');
 				else
 					printf("%c", *(b + o));
