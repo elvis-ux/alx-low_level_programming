@@ -43,7 +43,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			dr1 = 0;
 		if (c2 > 0)
-			c2--, dr = *(n2 + c2) - 48;
+			c2--, dr2 = *(n2 + c2) - 48;
 		else
 			dr2 = 0;
 		bg--, size_r--;
