@@ -7,9 +7,9 @@
  * Return: 0
  */
 
-char *_strstr(char *haystack, char needle)
+char *_strstr(char *haystack, char *needle)
 {
-	char *results = haystack, *needle = needle;
+	char *results = haystack, *fneedle = needle;
 
 	while (*haystack)
 	{
