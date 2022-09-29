@@ -8,29 +8,28 @@
 
 int _strlen_recursion(char *s)
 {
-	if (!*s)
+	if (*s == '\0')
 	{
 		return (0);
 	}
-	return (1 + _strlen_recursion(++s));
+	return (1 + _strlen_recursion(s + 1));
 }
 
 /**
- * p1 - palindrome
- * @s: points to string
- * @1: position
- * Return: boolene
+ * compare_to - compares each character of the string
+ * @s: string
+ * @a: smallest iterator
+ * @b: biggest iterator;
+ * Return: .
  */
 
-int p1(char *s, int 1)
+int compare_to(char *s, int a, int b)
 {
-	if (1 < 1)
+	if (*(s + a) == *(s + b))
 	{
-		return (1);
-	}
-	if (*s == *(s + 1))
-	{
-		return (p1(s + 1, 1 - 2));
+		if (a == b || a == b + 1)
+			return (1);
+		return (0 + compare_to(s, a + 1, b - 1));
 	}
 	return (0);
 }
@@ -43,7 +42,7 @@ int p1(char *s, int 1)
 
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s);
-
-	return (p1(s, len - 1));
+	if (*s == '\0')
+		return (1);
+	return (compare_to(s, 0, _strlen_recursion(s) - 1));
 }
