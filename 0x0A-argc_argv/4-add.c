@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - adds two positive numbers
  * @argc: argument count
@@ -8,28 +8,24 @@
  * Return: 1 if any number contains a non-digit symbol else 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int j, n, sum = 0;
+	unsigned int total = 0;
+	unsigned int num;
+	int i;
+	int c;
 
-	char *flag;
-
-	if (argc < 2)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
+		for (c = 0; argv[i][c]; c++)
+			if (!isdigit(argv[i][c]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		num = atoi(argv[i]);
+		total += num;
 	}
-
-	for (j = 1; argv[j]; j++)
-	{
-		n = strtol(argv[j], &flag, 10);
-		if (*flag)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-			sum += n;
-	}
-	printf("%d\n", sum);
+	printf("%d\n", total);
 	return (0);
 }
