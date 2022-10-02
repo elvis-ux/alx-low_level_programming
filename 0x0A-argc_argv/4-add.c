@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		printf("0\n");
 	}
 
-	for (j = 1; argv[j], j++)
+	for (j = 1; argv[j]; j++)
 	{
 		n = strtol(argv[j], &flag, 10);
 		if (*flag)
