@@ -1,3 +1,2 @@
-More pointers
-Arrays and
-Strings
+argc
+argv
