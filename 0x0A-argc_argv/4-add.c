@@ -10,8 +10,8 @@
 
 int main(int argc, char **argv)
 {
-	int j, n;
-	int sum = 0;
+	int j, n, sum = 0;
+
 	char *flag;
 
 	if (argc < 2)
