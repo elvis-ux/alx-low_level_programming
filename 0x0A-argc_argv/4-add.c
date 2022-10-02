@@ -19,9 +19,9 @@ int main(int argc, char **argv)
 		printf("0\n");
 	}
 
-	for (i = 1; argv[i], i++)
+	for (j = 1; argv[j], j++)
 	{
-		n = strtol(argv[i], &flag, 10);
+		n = strtol(argv[j], &flag, 10);
 		if (*flag)
 		{
 			printf("Error\n");
