@@ -25,9 +25,9 @@ int **alloc_grid(int col, int row)
 		if (grid[j] == 0)
 		{
 			while (j--)
-				free(grid[j];
-						free(grid);
-						return (NULL);
+				free(grid[j]);
+				free(grid);
+				return (NULL);
 		}
 			for (k = 0; k < col; k++)
 				grid[j][k] = 0;
