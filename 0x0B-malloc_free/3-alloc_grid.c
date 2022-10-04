@@ -11,26 +11,26 @@
 
 int **alloc_grid(int col, int row)
 {
-	int j, k, **grid;
+	int i, j, **grid;
 
 	grid = malloc(row * sizeof(*grid));
 
 	if (row < 1 || col < 1 || grid == 0)
 		return (NULL);
 
-	for (j = 0; j < row; j++)
+	for (i = 0; i < row; i++)
 	{
-		grid[j] = malloc(col * sizeof(**grid));
+		grid[i] = malloc(col * sizeof(**grid));
 
-		if (grid[j] == 0)
+		if (grid[i] == 0)
 		{
-			while (j--)
-				free(grid[j]);
-				free(grid);
-				return (NULL);
+			while (i--)
+				free(grid[i]);
+			free(grid);
+			return (NULL);
 		}
-			for (k = 0; k < col; k++)
-				grid[j][k] = 0;
+		for (j = 0; j < col; j++)
+				grid[i][j] = 0;
 	}
-						return (grid);
+	return (grid);
 }
