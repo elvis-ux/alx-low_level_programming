@@ -5,32 +5,32 @@
 
 /**
  * string_nconcat - concatenates two strings
- * @str1: pointer to first string
- * @str2: pointer to second string
- * @size: size of str2 to be concatenated
+ * @s1: pointer to first string
+ * @s2: pointer to second string
+ * @n: size of str2 to be concatenated
  * Return: pointer to the concat. string
  */
 
-char *string_nconcat(char *str1, char str2, unsigned int size)
+char *string_nconcat(char *s1, char s2, unsigned int n)
 {
 	unsigned int dist1, dist2;
 
 	char *ptr;
 
-	if (str1 == NULL)
-		str1 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-	if (str2 == NULL)
-		str2 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	dist1 = strlen(str1);
-	dist2 = strlen(str2) <= size ? strlen(str2) : size;
+	dist1 = strlen(s1);
+	dist2 = strlen(s2) <= size ? strlen(s2) : n;
 	ptr = malloc(dist1 + dist2 + 1);
 
 	if (ptr == NULL)
 		return (NULL);
-	strcpy(ptr, str1);
-	strncat(ptr, str2, size);
+	strcpy(ptr, s1);
+	strncat(ptr, s2, n);
 
 	return (ptr);
 }
