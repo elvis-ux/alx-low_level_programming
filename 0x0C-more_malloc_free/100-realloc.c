@@ -20,4 +20,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	asyn = realloc(ptr, new_size);
 	if (asyn == NULL)
 		return (NULL);
+	return (asyn);
 }
