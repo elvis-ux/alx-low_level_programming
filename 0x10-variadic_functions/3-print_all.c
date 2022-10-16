@@ -10,7 +10,7 @@ void print_all(const char * const format, ...);
 {
 	va_list ap;
 	int i = 0, j, c = 0;
-	char *ptr;
+	char *str;
 	const char arr[] = "cifs";
 
 	va_start(ap, format);
@@ -39,12 +39,12 @@ void print_all(const char * const format, ...);
 				break;
 			case 's':
 				ptr = va_arg(ap, char*), c = 1;
-				if (!ptr)
+				if (!str)
 				{
 					printf("(nil)");
 					break;
 				}
-				printf("%s", ptr);
+				printf("%s", str);
 				break;
 		}
 		i++;
