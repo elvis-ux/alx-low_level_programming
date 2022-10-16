@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < memory; i++)
 	{
-		printf("%02x" op[i] & 0xFF);
+		printf("%02x", op[i] & 0xFF);
 		if (i != memory - 1)
 			printf(" ");
 	}
