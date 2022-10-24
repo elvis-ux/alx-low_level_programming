@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 	}
-	if (h->nest == NULL)
+	if (h->next == NULL)
 		return (size);
 	node = h->next;
 	for (; node != NULL; size++, node = node->next)
