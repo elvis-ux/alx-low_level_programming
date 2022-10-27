@@ -68,11 +68,11 @@ size_t free_listint_safe(listint_t **h)
 	}
 	else
 	{
-		for (index = 0  ; index < nodes; index++)
+		for (index = 0; index < nodes; index++)
 		{
 			temp = (*h)->next;
 			free(*h);
-			*h = remp;
+			*h = temp;
 		}
 		*h = NULL;
 	}
