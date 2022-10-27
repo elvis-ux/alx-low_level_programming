@@ -17,7 +17,7 @@ size_t looped_listint_len(const listint_t *head)
 	const listint_t *slowp, *fastp;
 	size_t nodes = i;
 
-	if (head == NULL || nead->next == NULL)
+	if (head == NULL || head->next == NULL)
 		return (0);
 	slowp = head->next;
 	fastp = (head->next)->next;
