@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h);
  * Return: the no of unique nodes in the list else 0
  */
 
-size_t looped_listint_count(listint_ *head)
+size_t looped_listint_count(listint_t *head)
 {
 	listint_t *tor, *here;
 	size_t nodes = 1;
