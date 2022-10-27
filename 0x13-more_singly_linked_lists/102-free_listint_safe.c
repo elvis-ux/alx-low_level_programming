@@ -12,26 +12,26 @@ size_t free_listint_safe(listint_t **h);
 
 size_t looped_listint_count(listint_t *head)
 {
-	listint_t *tor, *here;
+	listint_t *tor, *hare;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 	tor = head->next;
-	here = (head->next)->next;
-	while (here)
+	hare = (head->next)->next;
+	while (hare)
 	{
-		if  (tor == here)
+		if  (tor == hare)
 		{
 			tor = head;
-			while (tor != here)
+			while (tor != hare)
 			{
 				nodes++;
 				tor = tor->next;
-				here = here->next;
+				hare = hare->next;
 			}
 			tor = tor->next;
-			while (tor != here)
+			while (tor != hare)
 			{
 				node++;
 				tor = tor->next;
@@ -39,7 +39,7 @@ size_t looped_listint_count(listint_t *head)
 			return (nodes);
 		}
 		tor = tor->next;
-		here = (here->next)->next;
+		hare = (hare->next)->next;
 	}
 	return (0);
 }
