@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 
-size_t looped_listint_ len(const listint_t *head);
+size_t looped_listint_len(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
 
 /**
@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head);
 size_t looped_listint_len(const listint_t *head)
 {
 	const listint_t *slowp, *fastp;
-	size_t nodes = i;
+	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
