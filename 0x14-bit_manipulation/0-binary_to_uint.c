@@ -9,7 +9,7 @@
  * Return: converted no if successful else 0
  */
 
-unsigned int binary_to_unit(const char b)
+unsigned int binary_to_unit(const char *b)
 {
 	int i, base = 1, length = 0;
 	unsigned int res = 0;
