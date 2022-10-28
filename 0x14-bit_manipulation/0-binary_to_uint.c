@@ -14,7 +14,7 @@ unsigned int binary_to_unit(const char *b)
 	int i, base = 1, length = 0;
 	unsigned int res = 0;
 
-	if (b)
+	if (!b)
 		return (0);
 	length = strlen(b);
 	for (i = length - 1; i >= 0; i--)
