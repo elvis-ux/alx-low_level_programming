@@ -1,23 +1,23 @@
-#include "main.h"
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
+#include "main.h"
 #include <math.h>
 
 /**
- * binary_to_unit - converts binary no to unsigned int
- * @b: pointer to char array in binary to be converted
+ * binary_to_unit - converts binary to int
+ * @b: pointer to the char array in binary to be converte
  * Return: converted no if successful else 0
  */
 
 unsigned int binary_to_unit(const char *b)
 {
-	int i, base = 1, length = 0;
+	int i, base = 1, len = 0;
 	unsigned int res = 0;
 
 	if (!b)
 		return (0);
-	length = strlen(b);
-	for (i = length - 1; i >= 0; i--)
+	len = strlen(b);
+	for (i = len - 1; i >= 0; i--)
 	{
 		if (b[i] < '0' || b[i] > '1')
 			return (0);
