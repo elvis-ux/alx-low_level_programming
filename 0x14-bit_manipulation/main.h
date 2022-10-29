@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*unsigned int alias */
+typedef unsigned int uint;
+
+/*unsigned long int alias */
+typedef unsigned long int ulong;
 
 #include <stdio.h>
 #include <stdlib.h>

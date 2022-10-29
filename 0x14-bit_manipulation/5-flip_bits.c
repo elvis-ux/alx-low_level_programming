@@ -7,13 +7,18 @@
  * Return: hamming distance
  */
 
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+uint flip_bits(ulong n, ulong m)
 {
-	int shift = (sizeof(n) * 8);
-	int dist = 0;
+	ulong o;
+	uint i = 0;
 
-	while (shift--)
-		dist += (n >> shift & 1) != (m >> shift & 1);
+	o = n ^ m;
 
-	return (dist);
+	while (o)
+	{
+		if (o & 1)
+			I++;
+		o = o >> 1;
+	}
+	return (i);
 }
