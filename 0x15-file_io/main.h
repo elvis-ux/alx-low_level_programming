@@ -8,4 +8,4 @@
 
 ssize_t read_textfile(const char *filename, size_t letters);
 
-#enif /* MAIN_H */
+#endif /* MAIN_H */
